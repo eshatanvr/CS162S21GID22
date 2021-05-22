@@ -6,6 +6,7 @@
 package finalproject;
 
 import GUI_final.HomePage;
+import GUI_final.adminLoginGUI;
 
 /**
  *
@@ -18,7 +19,7 @@ public class FinalProject {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        HomePage nm=new HomePage();
+        adminLoginGUI nm=new adminLoginGUI();
         nm.setVisible(true);
     }
     
