@@ -27,19 +27,68 @@ public class StudentLogIn extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jRadioButton2 = new javax.swing.JRadioButton();
+        jRadioButton3 = new javax.swing.JRadioButton();
+        jRadioButton4 = new javax.swing.JRadioButton();
+        jLabel6 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jButton1.setText("Take Quiz");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 220, -1, -1));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI_final/Images/icons8-faq-48.png"))); // NOI18N
+        jLabel2.setText("jLabel2");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 50, -1));
+
+        jLabel3.setFont(new java.awt.Font("Colonna MT", 1, 48)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("Quiz Management System");
+        jLabel3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 30, -1, 50));
+
+        jLabel4.setFont(new java.awt.Font("Vivaldi", 3, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("Come n Learn");
+        jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 70, 160, 40));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI_final/Images/icons8-next-page-96.png"))); // NOI18N
+        jLabel5.setText("jLabel5");
+        jPanel1.add(jLabel5);
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 420, 100, 90));
+
+        jRadioButton1.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
+        jRadioButton1.setText("Option 1");
+        getContentPane().add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 280, -1, -1));
+
+        jRadioButton2.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
+        jRadioButton2.setText("Option  2");
+        getContentPane().add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 280, -1, -1));
+
+        jRadioButton3.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
+        jRadioButton3.setText("Option 3");
+        getContentPane().add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 360, -1, -1));
+
+        jRadioButton4.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
+        jRadioButton4.setText("Option 4");
+        getContentPane().add(jRadioButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 360, -1, -1));
+
+        jLabel6.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel6.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("Question body");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 190, 720, 60));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI_final/Images/New-blog-graphic.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -80, 1450, 780));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 890, 510));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -80,7 +129,16 @@ public class StudentLogIn extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JRadioButton jRadioButton3;
+    private javax.swing.JRadioButton jRadioButton4;
     // End of variables declaration//GEN-END:variables
 }

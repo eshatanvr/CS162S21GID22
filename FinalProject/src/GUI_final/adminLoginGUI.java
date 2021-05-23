@@ -110,14 +110,13 @@ public class adminLoginGUI extends javax.swing.JFrame {
         jButton4.setBorder(null);
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 150, 20));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Umar\\Downloads\\icons8-power-off-button-64.png")); // NOI18N
         jLabel6.setText("jLabel6");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 450, 60, 60));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 440, 90, 60));
 
         jLabel5.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Log out");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 470, -1, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 470, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Colonna MT", 1, 48)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
