@@ -19,7 +19,7 @@ public class FinalProject {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        adminLoginGUI nm=new adminLoginGUI();
+        HomePage nm=new HomePage();
         nm.setVisible(true);
     }
     
