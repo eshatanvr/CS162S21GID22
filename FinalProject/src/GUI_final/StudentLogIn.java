@@ -5,6 +5,8 @@
  */
 package GUI_final;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author PCC
@@ -20,6 +22,8 @@ public class StudentLogIn extends javax.swing.JFrame {
         jRadioButton4.setOpaque(false);
         jRadioButton2.setOpaque(false);
         jRadioButton3.setOpaque(false);
+        HomePage a= new HomePage();
+        a.dispose();
     }
 
     /**
@@ -39,7 +43,11 @@ public class StudentLogIn extends javax.swing.JFrame {
         jRadioButton3 = new javax.swing.JRadioButton();
         jRadioButton4 = new javax.swing.JRadioButton();
         jLabel6 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        jXLabel2 = new org.jdesktop.swingx.JXLabel();
+        jXLabel4 = new org.jdesktop.swingx.JXLabel();
+        jXLabel5 = new org.jdesktop.swingx.JXLabel();
+        jLabel7 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -83,10 +91,35 @@ public class StudentLogIn extends javax.swing.JFrame {
         jLabel6.setText("Question body");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 170, 210, 60));
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 255));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI_final/Images/icons8-next-page-96.png"))); // NOI18N
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 390, 100, 90));
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI_final/Images/icons8-next-50.png"))); // NOI18N
+        jLabel5.setText("jLabel5");
+        jLabel5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 410, 50, -1));
+
+        jXLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jXLabel2.setText("Move to the next Question");
+        jXLabel2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        getContentPane().add(jXLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 460, -1, -1));
+
+        jXLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jXLabel4.setText("OR");
+        jXLabel4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        getContentPane().add(jXLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 430, -1, -1));
+
+        jXLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jXLabel5.setText("Submit");
+        jXLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        getContentPane().add(jXLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 460, -1, -1));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI_final/Images/icons8-submit-for-approval-50.png"))); // NOI18N
+        jLabel7.setText("jLabel7");
+        jLabel7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel7MouseClicked(evt);
+            }
+        });
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 410, 50, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI_final/Images/New-blog-graphic.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -95,51 +128,37 @@ public class StudentLogIn extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
+        // TODO add your handling code here:
+        int inp = JOptionPane.showConfirmDialog(null, "Are you sure you want to submit this now ?", "Confirmation Message",JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE);
+      if(inp == 0) {
+          dispose();
+          String name=JOptionPane.showInputDialog("Enter your good name: ");
+          String mail=JOptionPane.showInputDialog("Enter your email on which you want to recieve your result: ");
+          
+          JOptionPane.showMessageDialog(this, "Submitted Successfully");
+      }
+    }//GEN-LAST:event_jLabel7MouseClicked
+
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(StudentLogIn.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(StudentLogIn.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(StudentLogIn.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(StudentLogIn.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new StudentLogIn().setVisible(true);
-            }
-        });
-    }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JRadioButton jRadioButton4;
+    private org.jdesktop.swingx.JXLabel jXLabel2;
+    private org.jdesktop.swingx.JXLabel jXLabel4;
+    private org.jdesktop.swingx.JXLabel jXLabel5;
     // End of variables declaration//GEN-END:variables
 }
