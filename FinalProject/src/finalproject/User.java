@@ -12,7 +12,7 @@ import GUI_final.adminLoginGUI;
  *
  * @author Umar
  */
-public class FinalProject {
+public class User {
 
     /**
      * @param args the command line arguments

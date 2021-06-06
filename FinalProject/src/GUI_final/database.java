@@ -16,11 +16,12 @@ public class database {
       Class.forName("com.mysql.cj.jdbc.Driver"); 
        Connection con=DriverManager.getConnection(  
         "jdbc:mysql://localhost:3306/quiz_data","root","Es_20022002 kh");  
-        //here sonoo is database name, root is username and password  
+        //here quiz_data is database name, root is username and password  
         Statement stmt=con.createStatement();  
-        ResultSet rs=stmt.executeQuery("select * from user");  
+        ResultSet rs=stmt.executeQuery("select * from user"); 
+        System.out.println(rs);
         while(rs.next())  
-        System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3));  
+        System.out.println(rs.getString(1)+"  "+rs.getString(2));  
         con.close();  
     }catch (Exception ex)
     {
