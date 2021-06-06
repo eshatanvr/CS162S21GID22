@@ -154,7 +154,7 @@ public class HomePage extends javax.swing.JFrame {
 
     private void email_idActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_email_idActionPerformed
         // TODO add your handling code here:
-         email=email_id.getText().toString();
+         
          
     }//GEN-LAST:event_email_idActionPerformed
 
@@ -167,8 +167,8 @@ public class HomePage extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
          boolean flag=false;
-         
-         JOptionPane.showMessageDialog(null,email +"  "+pass +"  Are you sure?!");
+         email=email_id.getText().toString();
+         pass=password.getText();
         if(email.equals("admin@project.uet"))
         {
             if(pass.equals("finpro12"))
@@ -198,7 +198,7 @@ public class HomePage extends javax.swing.JFrame {
 
     private void passwordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordActionPerformed
         // TODO add your handling code here:
-        pass=password.toString();
+        
     }//GEN-LAST:event_passwordActionPerformed
 
    
