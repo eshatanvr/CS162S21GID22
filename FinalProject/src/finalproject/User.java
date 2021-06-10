@@ -7,6 +7,7 @@ package finalproject;
 
 import GUI_final.HomePage;
 import GUI_final.adminLoginGUI;
+import GUI_final.database;
 
 /**
  *
@@ -21,6 +22,7 @@ public class User {
         // TODO code application logic here
         HomePage nm=new HomePage();
         nm.setVisible(true);
+        database.main();
     }
     
 }

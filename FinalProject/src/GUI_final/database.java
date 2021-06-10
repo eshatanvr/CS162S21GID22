@@ -10,9 +10,9 @@ import java.sql.*;
  * @author PCC
  */
 public class database {
-    public static void data ()
+    public static void main  ()
 {
-    try{
+try{
       Class.forName("com.mysql.cj.jdbc.Driver"); 
        Connection con=DriverManager.getConnection(  
         "jdbc:mysql://localhost:3306/quiz_data","root","Es_20022002 kh");  
@@ -26,7 +26,7 @@ public class database {
     }catch (Exception ex)
     {
         System.out.println(" no ");
-    }
+    }    
 }
     
 }
