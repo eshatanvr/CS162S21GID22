@@ -208,10 +208,13 @@ public class HomePage extends javax.swing.JFrame {
         
     }//GEN-LAST:event_passwordActionPerformed
 
+<<<<<<< Updated upstream
     private void formMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseDragged
         // TODO add your handling code here:
        
     }//GEN-LAST:event_formMouseDragged
+=======
+>>>>>>> Stashed changes
 
    
     // Variables declaration - do not modify//GEN-BEGIN:variables
