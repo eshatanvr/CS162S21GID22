@@ -5,7 +5,7 @@
  */
 package GUI_final;
 
-import javax.swing.JOptionPane;
+import javax.swing.*;
 
 /**
  *
@@ -44,9 +44,6 @@ public class StudentLogIn extends javax.swing.JFrame {
         jRadioButton4 = new javax.swing.JRadioButton();
         jLabel6 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jXLabel2 = new org.jdesktop.swingx.JXLabel();
-        jXLabel4 = new org.jdesktop.swingx.JXLabel();
-        jXLabel5 = new org.jdesktop.swingx.JXLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
@@ -96,21 +93,6 @@ public class StudentLogIn extends javax.swing.JFrame {
         jLabel5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 410, 50, -1));
 
-        jXLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jXLabel2.setText("Move to the next Question");
-        jXLabel2.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        getContentPane().add(jXLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 460, -1, -1));
-
-        jXLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jXLabel4.setText("OR");
-        jXLabel4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        getContentPane().add(jXLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 430, -1, -1));
-
-        jXLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jXLabel5.setText("Submit");
-        jXLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        getContentPane().add(jXLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 460, -1, -1));
-
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI_final/Images/icons8-submit-for-approval-50.png"))); // NOI18N
         jLabel7.setText("jLabel7");
         jLabel7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -157,8 +139,5 @@ public class StudentLogIn extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JRadioButton jRadioButton4;
-    private org.jdesktop.swingx.JXLabel jXLabel2;
-    private org.jdesktop.swingx.JXLabel jXLabel4;
-    private org.jdesktop.swingx.JXLabel jXLabel5;
     // End of variables declaration//GEN-END:variables
 }
