@@ -22,8 +22,7 @@ public class StudentLogIn extends javax.swing.JFrame {
         jRadioButton4.setOpaque(false);
         jRadioButton2.setOpaque(false);
         jRadioButton3.setOpaque(false);
-        HomePage a= new HomePage();
-        a.dispose();
+       
     }
 
     /**
@@ -133,6 +132,8 @@ public class StudentLogIn extends javax.swing.JFrame {
         int inp = JOptionPane.showConfirmDialog(null, "Are you sure you want to submit this now ?", "Confirmation Message",JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE);
       if(inp == 0) {
           dispose();
+          HomePage a= new HomePage();
+        a.disposeIt();
           String name=JOptionPane.showInputDialog("Enter your good name: ");
           String mail=JOptionPane.showInputDialog("Enter your email on which you want to recieve your result: ");
           

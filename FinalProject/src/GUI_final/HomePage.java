@@ -25,7 +25,10 @@ public class HomePage extends javax.swing.JFrame {
         jCheckBox1.setOpaque(false);
         
     }
-
+    public void disposeIt()
+    {
+        dispose();
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
