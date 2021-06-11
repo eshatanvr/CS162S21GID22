@@ -5,6 +5,8 @@
  */
 package GUI_final;
 
+import finalproject.Admin;
+
 /**
  *
  * @author PCC
@@ -29,7 +31,7 @@ public class subject extends javax.swing.JFrame {
 
         jLabel4 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jComboBox2 = new javax.swing.JComboBox<>();
+        subject = new javax.swing.JComboBox<>();
         jComboBox1 = new javax.swing.JComboBox<>();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -52,13 +54,13 @@ public class subject extends javax.swing.JFrame {
             }
         });
 
-        jComboBox2.setBackground(new java.awt.Color(0, 0, 153));
-        jComboBox2.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
-        jComboBox2.setForeground(new java.awt.Color(255, 255, 255));
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Any", "English", "Mathematics", "Science", "Education", "Computer" }));
-        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+        subject.setBackground(new java.awt.Color(0, 0, 153));
+        subject.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
+        subject.setForeground(new java.awt.Color(255, 255, 255));
+        subject.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Any", "English", "Mathematics", "Chemitry", "Physics" }));
+        subject.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox2ActionPerformed(evt);
+                subjectActionPerformed(evt);
             }
         });
 
@@ -95,7 +97,7 @@ public class subject extends javax.swing.JFrame {
                             .addGap(60, 60, 60)
                             .addComponent(jLabel2)
                             .addGap(90, 90, 90)
-                            .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(subject, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(layout.createSequentialGroup()
                             .addGap(60, 60, 60)
                             .addComponent(jLabel4)
@@ -120,7 +122,7 @@ public class subject extends javax.swing.JFrame {
                             .addGap(40, 40, 40)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jLabel2)
-                                .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(subject, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGap(20, 20, 20)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jLabel4)
@@ -140,9 +142,12 @@ public class subject extends javax.swing.JFrame {
         nm.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+    private void subjectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subjectActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox2ActionPerformed
+        String name=subject.getName();
+        sub_DB.main(name);
+        
+    }//GEN-LAST:event_subjectActionPerformed
 
     /**
      * @param args the command line arguments
@@ -151,10 +156,10 @@ public class subject extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JComboBox<String> subject;
     // End of variables declaration//GEN-END:variables
 }

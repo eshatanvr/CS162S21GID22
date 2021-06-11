@@ -19,7 +19,6 @@ try{
         //here quiz_data is database name, root is username and password  
         Statement stmt=con.createStatement();  
 //        ResultSet rs=stmt.executeQuery("select * from subjects"); 
-//        System.out.println(rs);
 //        while(rs.next())  
 //        System.out.println(rs.getString(1)+"  "+rs.getString(2));  
         con.close();  
