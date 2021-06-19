@@ -26,14 +26,14 @@ public class q_DB {
         ResultSet rs=stmt.executeQuery("select * from questions"); 
         while(rs.next())  
         System.out.println(rs.getString(1)+"  "+rs.getString(2));
-         while(rs.next()) 
-         {
-             if(rs.getString(2).equals(name))
-             {
-                 id=Integer.parseInt(rs.getString(1));
-                 break;
-             }
-         }
+//         while(rs.next()) 
+//         {
+//             if(rs.getString(2).equals(name))
+//             {
+//                 id=Integer.parseInt(rs.getString(1));
+//                 break;
+//             }
+//         }
     }catch (Exception ex)
     {
         System.out.println(" no ");

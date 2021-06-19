@@ -28,15 +28,15 @@ public class sub_DB {
         ResultSet rs=stmt.executeQuery("select * from subjects"); 
         while(rs.next())  
         System.out.println(rs.getString(1)+"  "+rs.getString(2));
-         while(rs.next()) 
-         {
-             if(rs.getString(2).equals(name))
-             {
-                 id=Integer.parseInt(rs.getString(1));
-                 getID(id);
-                 break;
-             }
-         }
+//         while(rs.next()) 
+//         {
+//             if(rs.getString(2).equals(name))
+//             {
+//                 id=Integer.parseInt(rs.getString(1));
+//                 getID(id);
+//                 break;
+//             }
+//         }
     }catch (Exception ex)
     {
         System.out.println(" no ");

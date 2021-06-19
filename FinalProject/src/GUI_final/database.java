@@ -18,9 +18,9 @@ try{
         "jdbc:mysql://localhost:3306/quiz_data","root","Es_20022002 kh");  
         //here quiz_data is database name, root is username and password  
         Statement stmt=con.createStatement();  
-//        ResultSet rs=stmt.executeQuery("select * from subjects"); 
-//        while(rs.next())  
-//        System.out.println(rs.getString(1)+"  "+rs.getString(2));  
+        ResultSet rs=stmt.executeQuery("select * from subjects"); 
+        while(rs.next())  
+        System.out.println(rs.getInt(1)+"  "+rs.getString(2));  
         con.close();  
     }catch (Exception ex)
     {

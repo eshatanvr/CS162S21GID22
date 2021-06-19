@@ -22,7 +22,7 @@ public class User {
         // TODO code application logic here
         HomePage nm=new HomePage();
         nm.setVisible(true);
-      //  database.main();
+        database.main();
         Admin.main();
     }
     
