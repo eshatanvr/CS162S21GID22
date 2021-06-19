@@ -27,18 +27,7 @@ public class sub_DB {
         int id=0;
         ResultSet rs=stmt.executeQuery("select * from subjects"); 
         while(rs.next())  
-<<<<<<< Updated upstream
-        System.out.println(rs.getString(1)+"  "+rs.getString(2));
-//         while(rs.next()) 
-//         {
-//             if(rs.getString(2).equals(name))
-//             {
-//                 id=Integer.parseInt(rs.getString(1));
-//                 getID(id);
-//                 break;
-//             }
-//         }
-=======
+
         System.out.println(rs.getInt(1)+"  "+rs.getString(2));
          while(rs.next()) 
          {
@@ -49,7 +38,7 @@ public class sub_DB {
                  break;
              }
          }
->>>>>>> Stashed changes
+
     }catch (Exception ex)
     {
         System.out.println(" no ");
