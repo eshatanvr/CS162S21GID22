@@ -12,11 +12,14 @@ import java.sql.*;
  *
  * @author PCC
  */
-public class Admin {
-     public Admin(String email,String pass) {
-       
-    }
-    public static void main ()
+public class Admin extends Questions{
+    public List <Questions> Qlist= new ArrayList<>();
+    
+    public boolean AddQuestion(Questions s)
     {
+        
+        Qlist.add(s);
+        return true;
     }
+    
 }

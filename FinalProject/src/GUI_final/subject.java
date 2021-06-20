@@ -6,7 +6,7 @@
 package GUI_final;
 
 import finalproject.Admin;
-
+import java.sql.*;
 /**
  *
  * @author PCC
@@ -145,7 +145,20 @@ public class subject extends javax.swing.JFrame {
     private void subjectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subjectActionPerformed
         // TODO add your handling code here:
         String name=subject.getName();
-        sub_DB.main(name);
+        int name_int=Integer.parseInt(name);
+      //  sub_DB.main(name);
+          try{
+      Class.forName("com.mysql.cj.jdbc.Driver"); 
+       Connection con=DriverManager.getConnection(  
+        "jdbc:mysql://localhost:3306/quiz_data","root","Es_20022002 kh");  
+        //here quiz_data is database name, root is username and password  
+        Statement stmt=con.createStatement(); 
+        String sql= "INSERT INTO subjects VALUES ("+name_int+",'"+name+"')";
+       stmt.executeUpdate(sql);
+    }catch (Exception ex)
+    {
+        System.out.println(" no ");
+    } 
         
     }//GEN-LAST:event_subjectActionPerformed
 

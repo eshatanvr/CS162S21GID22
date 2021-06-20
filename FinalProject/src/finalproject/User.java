@@ -23,7 +23,7 @@ public class User {
         HomePage nm=new HomePage();
         nm.setVisible(true);
         database.main();
-        Admin.main();
+       
     }
     
 }

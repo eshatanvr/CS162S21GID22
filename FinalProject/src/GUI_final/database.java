@@ -13,10 +13,12 @@ public class database {
     public static void main  ()
 {
 try{
+    
       Class.forName("com.mysql.cj.jdbc.Driver"); 
        Connection con=DriverManager.getConnection(  
         "jdbc:mysql://localhost:3306/quiz_data","root","Es_20022002 kh");  
         //here quiz_data is database name, root is username and password  
+       // subject obj= new subject();
         Statement stmt=con.createStatement();  
         ResultSet rs=stmt.executeQuery("select * from subjects"); 
         while(rs.next())  
@@ -24,7 +26,7 @@ try{
         con.close();  
     }catch (Exception ex)
     {
-        System.out.println(" no ");
+        System.out.println(" no!!! ");
     }    
 }
     

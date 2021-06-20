@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package GUI_final;
-
+import java.sql.*;
 /**
  *
  * @author PCC
@@ -29,8 +29,8 @@ public class AdminSubject extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel4 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jComboBox2 = new javax.swing.JComboBox<>();
+        sub_type = new javax.swing.JButton();
+        sub_names = new javax.swing.JComboBox<>();
         jComboBox1 = new javax.swing.JComboBox<>();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -44,32 +44,37 @@ public class AdminSubject extends javax.swing.JFrame {
         jLabel4.setText("Time Duration:");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, -1, -1));
 
-        jButton1.setBackground(new java.awt.Color(51, 0, 51));
-        jButton1.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Done");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        sub_type.setBackground(new java.awt.Color(51, 0, 51));
+        sub_type.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
+        sub_type.setForeground(new java.awt.Color(255, 255, 255));
+        sub_type.setText("Done");
+        sub_type.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                sub_typeActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 230, 80, 30));
+        getContentPane().add(sub_type, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 230, 80, 30));
 
-        jComboBox2.setBackground(new java.awt.Color(0, 0, 153));
-        jComboBox2.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
-        jComboBox2.setForeground(new java.awt.Color(255, 255, 255));
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Any", "English", "Mathematics", "Science", "Education", "Computer" }));
-        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+        sub_names.setBackground(new java.awt.Color(0, 0, 153));
+        sub_names.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
+        sub_names.setForeground(new java.awt.Color(255, 255, 255));
+        sub_names.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Any", "English", "Mathematics", "Chemistry", "Physics" }));
+        sub_names.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox2ActionPerformed(evt);
+                sub_namesActionPerformed(evt);
             }
         });
-        getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 110, 120, 30));
+        getContentPane().add(sub_names, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 110, 120, 30));
 
         jComboBox1.setBackground(new java.awt.Color(0, 0, 153));
         jComboBox1.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
         jComboBox1.setForeground(new java.awt.Color(255, 255, 255));
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "5 minutes", "10 minutes", "15 minutes" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, 120, 30));
 
         jLabel3.setFont(new java.awt.Font("Colonna MT", 1, 48)); // NOI18N
@@ -90,28 +95,35 @@ public class AdminSubject extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+    private void sub_namesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sub_namesActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox2ActionPerformed
+        
+    }//GEN-LAST:event_sub_namesActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void sub_typeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sub_typeActionPerformed
         // TODO add your handling code here:
+
         adminLoginGUI nm=new adminLoginGUI();
         nm.setVisible(true);
         nm.visibleTab();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_sub_typeActionPerformed
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_jComboBox1ActionPerformed
 
     /**
      * @param args the command line arguments
      */
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JComboBox<String> sub_names;
+    private javax.swing.JButton sub_type;
     // End of variables declaration//GEN-END:variables
 }
