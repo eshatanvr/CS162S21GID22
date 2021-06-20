@@ -123,6 +123,7 @@ public class search extends javax.swing.JFrame {
         // TODO add your handling code here:
         adminLoginGUI mj=new  adminLoginGUI ();
         mj.setVisible(true);
+        this.dispose();
         mj.action();
     }//GEN-LAST:event_jButton2ActionPerformed
 

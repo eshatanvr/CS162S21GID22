@@ -85,7 +85,7 @@ public class StudentLogIn extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Question body");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 170, 210, 60));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 730, 60));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI_final/Images/icons8-next-50.png"))); // NOI18N
         jLabel5.setText("jLabel5");

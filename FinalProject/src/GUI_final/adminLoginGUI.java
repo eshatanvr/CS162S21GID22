@@ -6,7 +6,9 @@
 package GUI_final;
 
 import finalproject.Admin;
-import finalproject.English;
+import finalproject.Options;
+
+import finalproject.Questions;
 import javax.swing.JOptionPane;
 
 /**
@@ -18,13 +20,14 @@ public class adminLoginGUI extends javax.swing.JFrame {
     /**
      * Creates new form adminLoginGUI
      */
+    static int i=0;
     public adminLoginGUI() {
         initComponents();
+        
         jButton1.setOpaque(false);
        jButton2.setOpaque(false);
 
         jButton4.setOpaque(false);
-        
     }
     public void action(){
         jLabel4.setText("Update Quiz");
@@ -511,8 +514,7 @@ public class adminLoginGUI extends javax.swing.JFrame {
 
     private void quesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quesActionPerformed
         // TODO add your handling code here:
-        English obj=new English(ques.getText(),c_opt.getText());
-        
+      
     }//GEN-LAST:event_quesActionPerformed
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
@@ -538,6 +540,12 @@ public class adminLoginGUI extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
+        ques.setText("");
+        jTextField2.setText("");
+        jTextField3.setText("");
+        jTextField4.setText("");
+        jTextField5.setText("");
+        c_opt.setText("");
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -558,6 +566,7 @@ public class adminLoginGUI extends javax.swing.JFrame {
         // TODO add your handling code here:
         search nm=new search();
         nm.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -565,11 +574,59 @@ public class adminLoginGUI extends javax.swing.JFrame {
         dispose();
         
     }//GEN-LAST:event_jButton3ActionPerformed
-
+    public void press()
+        {
+            JOptionPane.showMessageDialog(rootPane, "Quiz Added Successfully");
+            ques.setText("");
+        jTextField2.setText("");
+        jTextField3.setText("");
+        jTextField4.setText("");
+        jTextField5.setText("");
+        c_opt.setText("");
+        }
     private void nextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextActionPerformed
         // TODO add your handling code here:
-         English.main();
-       JOptionPane.showMessageDialog(null,"Question has been added!!");
+        
+        String ques1=ques.getText();
+        String opt1=jTextField2.getText( );
+        String opt2=jTextField3.getText( );
+        String opt3=jTextField4.getText();
+        String opt4=jTextField5.getText( );
+        String copt=c_opt.getText( );
+        Questions q=new Questions();
+        Options o=new Options();
+        Admin s=new Admin();
+        if ( copt.equals(opt1) ||  copt.equals(opt2) ||  copt.equals(opt3) ||  copt.equals(opt4))
+        {
+             s.setOpt1(opt1);
+            s.setOpt3(opt3);
+            s.setOpt2(opt2);
+            s.setOpt4(opt4);
+            s.setcOpt(copt);
+            s.setqText(ques1);
+            s.setqID(i+1);
+            s.AddOptions(o);
+            s.AddQuestion(q);
+            JOptionPane.showMessageDialog(rootPane, "Question Added Successfully");
+            ques.setText("");
+        jTextField2.setText("");
+        jTextField3.setText("");
+        jTextField4.setText("");
+        jTextField5.setText("");
+        c_opt.setText("");
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(this, "Corect Option Should be one of the above options !!");
+           
+        }
+         i++;
+         
+        if (s.qID==10)
+        {
+            next.setText("Done");
+            press();
+        }
         
     }//GEN-LAST:event_nextActionPerformed
 

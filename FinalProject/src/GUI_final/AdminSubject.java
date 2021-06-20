@@ -105,6 +105,7 @@ public class AdminSubject extends javax.swing.JFrame {
 
         adminLoginGUI nm=new adminLoginGUI();
         nm.setVisible(true);
+        this.dispose();
         nm.visibleTab();
     }//GEN-LAST:event_sub_typeActionPerformed
 

@@ -140,6 +140,7 @@ public class subject extends javax.swing.JFrame {
         // TODO add your handling code here:
         StudentLogIn nm=new StudentLogIn();
         nm.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void subjectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subjectActionPerformed
